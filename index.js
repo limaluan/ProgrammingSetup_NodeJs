@@ -41,5 +41,16 @@ exec("code", (err, stdout, stderr) => {
     if (stderr) {
         return console.log(`error: ${stderr}`)
     }
+    console.log(stdout);
+})
+
+// Encerra o terminal
+exec("exit", (err, stdout, stderr) => {
+    if (err) {
+        return console.log(`error: ${error.message}`);
+    }
+    if (stderr) {
+        return console.log(`error: ${stderr}`)
+    }
     console.log(`Setup montado com Sucesso!`);
 })
